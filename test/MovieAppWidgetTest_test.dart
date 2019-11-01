@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:hao/Movie.dart';
 import 'package:hao/MovieDetail.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'MockImageHttpClient.dart';
+import 'MockImageHttpClient_test.dart';
 
 void main() {
 
