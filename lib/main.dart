@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:hao/MovieList.dart';
-class Mainapp extends StatelessWidget {
+
+class Main extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
