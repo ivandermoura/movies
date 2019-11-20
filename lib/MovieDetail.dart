@@ -5,7 +5,7 @@ import 'package:hao/Movie.dart';
 
 class MovieDetail extends StatelessWidget {
   // Movie object to handle.
-  Movie movie;
+  final Movie movie;
 
   // Constructor for the class.
   MovieDetail(this.movie);

@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:hao/Movie.dart';
 import 'package:hao/MovieDetail.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'MockImageHttpClient_test.dart';
+import 'package:image_test_utils/image_test_utils.dart';
+
 
 void main() {
 
@@ -28,14 +29,15 @@ void main() {
 
   testWidgets('Movie Detail Widget test', (WidgetTester tester) async {
 
-    HttpOverrides.runZoned(() async {
+    //HttpOverrides.runZoned(() async {
+      provideMockedNetworkImages(() async {
       await tester.pumpWidget(new MaterialApp(home: new MovieDetail(movie)));
 
       // Gets the created widgets
       Iterable<Widget> listOfWidgets = tester.allWidgets;
 
       checkIfTextsCreatedCorrectly(listOfWidgets, expectedTexts);
-    }, createHttpClient: createMockImageHttpClient);
+    });
   });
 }
 
