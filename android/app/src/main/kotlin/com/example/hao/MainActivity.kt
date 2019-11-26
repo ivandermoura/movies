@@ -1,4 +1,4 @@
-package com.something.hao
+package com.example.hao
 
 import android.os.Bundle
 
